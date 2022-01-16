@@ -4,5 +4,6 @@
 	(load-library "settings")
 	(load-library "straight")
 	(load-library "magit")
+	(load-library "ui")
 
 
