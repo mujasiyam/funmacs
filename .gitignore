@@ -24,6 +24,7 @@ test/result
 
 straight
 recentf
+transient
 
 # Undo-tree save-files
 *.~undo-tree
