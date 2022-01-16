@@ -16,3 +16,12 @@
        (goto-char (point-max))
        (eval-print-last-sexp)))
    (load bootstrap-file nil 'nomessage))
+
+;; INITIALIZED USE-PACKAGES
+(straight-use-package 'use-package)
+(setq use-package-always-ensure t)
+;; Configure use-package to use straight.el by default
+(use-package straight
+  :custom (straight-use-package-by-default t))
+
+
