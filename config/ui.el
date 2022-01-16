@@ -7,4 +7,6 @@
   (load-theme 'monokai-pro t)
   )
 
+;; FONTS ===================
+(set-face-attribute 'default nil :font "Fira Code Retina" :height 130)
 
