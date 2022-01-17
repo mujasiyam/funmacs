@@ -19,13 +19,4 @@
 ;; SET UP THE VISIBLE BELL
 (setq visible-bell t)
 
-;; ENABLE ido Mode
-(setq ido-everywhere t)
-(setq ido-enable-flex-matching t)
-(ido-mode t)
-
-;; BUILD-IN PROJECT PACKAGE
-(require 'project)
-(global-set-key (kbd "C-x p f") #'project-find-file )
-
 
