@@ -21,6 +21,8 @@
 /modules/private
 test/.local*/
 test/result
+.lsp-session-v1
+
 ido.last
 
 straight
