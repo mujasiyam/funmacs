@@ -25,6 +25,7 @@ test/result
 straight
 recentf
 transient
+eshell
 
 # Undo-tree save-files
 *.~undo-tree

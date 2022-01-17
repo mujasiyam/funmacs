@@ -18,3 +18,7 @@
 
 ;; SET UP THE VISIBLE BELL
 (setq visible-bell t)
+
+;; ENABLE ido Mode
+(setq ido-everywhere t)
+(ido-mode t)
