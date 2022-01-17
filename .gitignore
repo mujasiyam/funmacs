@@ -21,11 +21,13 @@
 /modules/private
 test/.local*/
 test/result
+ido.last
 
 straight
 recentf
 transient
 eshell
+
 
 # Undo-tree save-files
 *.~undo-tree
