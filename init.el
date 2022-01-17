@@ -6,6 +6,7 @@
 	(load-library "magit")
 	(load-library "ui")
 	(load-library "lsp")
-	(load-library "keymaps")	
+	(load-library "keymaps")
+	(load-library "general-packages")
 
 
