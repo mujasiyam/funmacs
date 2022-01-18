@@ -7,11 +7,11 @@
   :config
   (lsp-enable-which-key-integration t)
   :commands
-  (lsp lsp-deferred))
+  (lsp lsp-deferred)
   :hook
   ;; LSP LANGUAGES SUPPORT
-  (add-hook 'c-mode-hook #'lsp-deferred)      ;; ENABLE C PROGRAMING 
-  (add-hook 'c++-mode-hook #'lsp-deferred)    ;; ENABLE C++ PROGRAMING
+  (c-mode-hook . lsp-deferred)      ;; ENABLE C PROGRAMING 
+  (c++-mode-hook . lsp-deferred))    ;; ENABLE C++ PROGRAMING
 
 ;; LSP-UI MODULES
 (use-package lsp-ui
