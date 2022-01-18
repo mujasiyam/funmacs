@@ -19,4 +19,7 @@
 ;; SET UP THE VISIBLE BELL
 (setq visible-bell t)
 
+;; DISABLE COMMANDS WITHOUT USER CONFIRMATION
+(put 'upcase-region 'disabled nil)
+
 
