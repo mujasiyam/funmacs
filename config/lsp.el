@@ -10,8 +10,8 @@
   (lsp lsp-deferred)
   :hook
   ;; LSP LANGUAGES SUPPORT
-  (c-mode-hook . lsp-deferred)      ;; ENABLE C PROGRAMING 
-  (c++-mode-hook . lsp-deferred))    ;; ENABLE C++ PROGRAMING
+  (c-mode . lsp-deferred)       ;; ENABLE C PROGRAMING 
+  (c++-mode . lsp-deferred))    ;; ENABLE C++ PROGRAMING
 
 ;; LSP-UI MODULES
 (use-package lsp-ui
