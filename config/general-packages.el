@@ -1,4 +1,4 @@
- ;;================= GENERAL PACKAGES =================
+;;================= GENERAL PACKAGES =================
 
 ;; COMPANY MODE ==================
 (use-package company
@@ -7,13 +7,16 @@
   lsp-mode
   :init
   (add-hook 'after-init-hook 'global-company-mode)
+  ; Show suggestions after entering one character.
+  (setq company-minimum-prefix-length 1)
+  ; No delay in showing suggestions.
+  (setq company-idle-delay 0)
   :bind
   (:map company-active-map
 	("<tap>" . company-complete-selection))
   (:map lsp-mode-map
 	("<tap>" . company-indent-or-complete-common))
-)
-
+  )
 
 ;; ENABLE ido MODE ===============
 (setq ido-everywhere t)
