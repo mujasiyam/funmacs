@@ -24,3 +24,4 @@
 
 ;; ENABLE AUTOCOMPTE PAIRED BRACKETS
 (electric-pair-mode 1)
+
