@@ -11,6 +11,6 @@
 (setq ido-enable-flex-matching t)
 (ido-mode t)
 
-;; BUILD-IN PROJECT PACKAGE =======
+;; ENABLE PROJECT PACKAGE =======
 (require 'project)
 (global-set-key (kbd "C-x p f") #'project-find-file )
