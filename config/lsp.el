@@ -8,3 +8,13 @@
   (lsp-enable-which-key-integration t)
   :commands
   (lsp lsp-deferred))
+  ;; LSP LANGUAGES SUPPORT
+  :hook
+  (add-hook 'c-mode-hook #'lsp-deferred)      ;; ENABLE C PROGRAMING 
+  (add-hook 'c++-mode-hook #'lsp-deferred)    ;; ENABLE C++ PROGRAMING
+
+
+
+
+
+
