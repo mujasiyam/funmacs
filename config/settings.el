@@ -22,4 +22,5 @@
 ;; DISABLE COMMANDS WITHOUT USER CONFIRMATION
 (put 'upcase-region 'disabled nil)
 
-
+;; ENABLE AUTOCOMPTE PAIRED BRACKETS
+(electric-pair-mode 1)
