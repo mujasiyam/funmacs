@@ -23,8 +23,16 @@
 (setq ido-enable-flex-matching t)
 (ido-mode t)
 
-;; ENABLE PROJECT PACKAGE =======
+;; ENABLE PROJECT PACKAGE ========
 (require 'project)
 (global-set-key (kbd "C-x p f") #'project-find-file )
 
+;; YASNIPPET =====================
+(use-package yasnippet
+  :straight t
+  :config
+  (yas-global-mode 1)) ;; activate yaggsnippet
+;; YASNIPPET-SNIPPETS ============
+(use-package yasnippet-snippets
+  :straight t)
 
