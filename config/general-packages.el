@@ -35,3 +35,11 @@
 ;; YASNIPPET-SNIPPETS ============
 (use-package yasnippet-snippets
   :straight t)
+
+;; FORMAT-ALL-BUFFER
+(use-package format-all
+  :straight t
+  :config
+  (add-hook 'prog-mode-hook 'format-all-mode)
+  (add-hook 'format-all-mode-hook 'format-all-ensure-formatter)
+  )
