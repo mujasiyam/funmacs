@@ -14,6 +14,7 @@
   (c++-mode . lsp-deferred)           ;; ENABLE C++ PROGRAMING
   (rustic-mode . lsp-deferred)        ;; ENABLE RUST PROGRAMING
   (lua-mode . lsp-deferred)           ;; ENABLE LUA PROGRAMING
+  (sh-mode . lsp-deferred)
   )
 
 ;; LSP-UI MODULES
