@@ -12,7 +12,8 @@
   ;; LSP LANGUAGES SUPPORT
   (c-mode . lsp-deferred)             ;; ENABLE C PROGRAMING 
   (c++-mode . lsp-deferred)           ;; ENABLE C++ PROGRAMING
-  (rustic-mode . rustic-lsp-server)   ;; ENABLE RUST PROGRAMING
+  (rustic-mode . lsp-deferred)        ;; ENABLE RUST PROGRAMING
+  (lua-mode . lsp-deferred)           ;; ENABLE LUA PROGRAMING
   )
 
 ;; LSP-UI MODULES
