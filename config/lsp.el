@@ -26,7 +26,13 @@
 ;; LUA LANGUAGE SUPPORT
 (use-package lua-mode)
 
-;; Debug
+;; MARKDOWN-MODE NOT LSP
+(use-package markdown-mode
+  :straight t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown"))
+
+;; DEBUG
 (use-package dap-mode
   :straight t
   :diminish dap-mode
