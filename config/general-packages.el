@@ -7,9 +7,9 @@
   lsp-mode
   :init
   (add-hook 'after-init-hook 'global-company-mode)
-  ; Show suggestions after entering one character.
+					; Show suggestions after entering one character.
   (setq company-minimum-prefix-length 1)
-  ; No delay in showing suggestions.
+					; No delay in showing suggestions.
   (setq company-idle-delay 0)
   :bind
   (:map company-active-map
@@ -31,7 +31,7 @@
 (use-package yasnippet
   :straight t
   :config
-  (yas-global-mode 1)) ;; activate yaggsnippet
+  (yas-global-mode 1)) ; activate yaggsnippet
 ;; YASNIPPET-SNIPPETS ============
 (use-package yasnippet-snippets
   :straight t)
