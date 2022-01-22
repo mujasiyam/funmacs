@@ -37,6 +37,10 @@
   :init
   (setenv "WORKON_HOME" "~/.pyenv/versions"))
 
+;; FLYCHECK
+(use-package flycheck
+  :straight t
+  :init (global-flycheck-mode))
 
 ;; MARKDOWN-MODE NOT LSP
 (use-package markdown-mode
