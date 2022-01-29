@@ -43,3 +43,12 @@
   (add-hook 'prog-mode-hook 'format-all-mode)
   (add-hook 'format-all-mode-hook 'format-all-ensure-formatter)
   )
+
+;; PROJECTILE
+(use-package projectile
+  :straight t
+  :init
+  (projectile-mode +1)
+  :bind (:map projectile-mode-map
+              ("s-p" . projectile-command-map)
+              ("C-c p" . projectile-command-map)))
