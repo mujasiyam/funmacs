@@ -13,6 +13,7 @@
   (c++-mode . lsp-deferred)           ; ENABLE C++ PROGRAMING
   (rustic-mode . lsp-deferred)        ; ENABLE RUST PROGRAMING
   (lua-mode . lsp-deferred)           ; ENABLE LUA PROGRAMING
+  (typescript-mode . lsp-deferred)    ; ENABLE TYPESCRIPT PROGRAMING
   (sh-mode . lsp-deferred)            ; ENABLE SHELL SCRIPT
   (python-mode . (lambda ()
                    (require 'lsp-pyright)
@@ -27,7 +28,11 @@
 (use-package rustic)
 ;; LUA LANGUAGE SUPPORT
 (use-package lua-mode)
-
+;; TYPESCRIPT LANGUAGE SUPPORT
+(use-package typescript-mode
+  :mode "\\.ts\\'"
+  :config
+  (setq typescript-indent-level 2))
 ;; PYTHON LANGUAGE SUPPORT
 (use-package lsp-pyright
   :straight t)
