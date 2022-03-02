@@ -21,10 +21,6 @@
                    (lsp-deferred)))
   )
 
-;; LSP-UI MODULES
-(use-package lsp-ui
-  :commands lsp-ui-mode)
-
 ;; RUST LANGUAGE SUPPORT
 (use-package rustic)
 ;; LUA LANGUAGE SUPPORT
@@ -44,6 +40,11 @@
   :straight t
   :init
   (setenv "WORKON_HOME" "~/.pyenv/versions"))
+
+
+;; LSP-UI MODULES
+(use-package lsp-ui
+  :commands lsp-ui-mode)
 
 ;; FLYCHECK
 (use-package flycheck
