@@ -11,6 +11,7 @@
   ;; LSP LANGUAGES SUPPORT
   (c-mode . lsp-deferred)             ; ENABLE C PROGRAMING
   (c++-mode . lsp-deferred)           ; ENABLE C++ PROGRAMING
+  (c-or-c++-mode . lsp-deferred)      ; ENABLE C/C++ PROGRAMING
   (rustic-mode . lsp-deferred)        ; ENABLE RUST PROGRAMING
   (lua-mode . lsp-deferred)           ; ENABLE LUA PROGRAMING
   (typescript-mode . lsp-deferred)    ; ENABLE TYPESCRIPT PROGRAMING
@@ -25,9 +26,11 @@
   :commands lsp-ui-mode)
 
 ;; RUST LANGUAGE SUPPORT
-(use-package rustic)
+(use-package rustic
+  :mode "\\.rs\\'" )
 ;; LUA LANGUAGE SUPPORT
-(use-package lua-mode)
+(use-package lua-mode
+  :mode "\\.lua\\'" )
 ;; TYPESCRIPT LANGUAGE SUPPORT
 (use-package typescript-mode
   :mode "\\.ts\\'"
@@ -35,7 +38,8 @@
   (setq typescript-indent-level 2))
 ;; PYTHON LANGUAGE SUPPORT
 (use-package lsp-pyright
-  :straight t)
+  :straight t
+  :mode "\\.py\\'")
 ;; PYHTON ENV
 (use-package pyvenv
   :straight t
