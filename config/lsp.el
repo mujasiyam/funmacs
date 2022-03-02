@@ -26,8 +26,7 @@
   :commands lsp-ui-mode)
 
 ;; RUST LANGUAGE SUPPORT
-(use-package rustic
-  :mode "\\.rs\\'" )
+(use-package rustic)
 ;; LUA LANGUAGE SUPPORT
 (use-package lua-mode
   :mode "\\.lua\\'" )
