@@ -8,4 +8,4 @@
 (load-library "lsp")
 (load-library "keymaps")
 (load-library "general-packages")
-(load-library "eglot")
+;;(load-library "eglot")
