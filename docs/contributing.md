@@ -57,6 +57,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-## [FAQ](https://github.com/mujalab/neote/issues)
+## [FAQ](https://github.com/mujalab/funmacs/issues)
 <!---------------------------------------------- END -------------------------------------------------->
 
