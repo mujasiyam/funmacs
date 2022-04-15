@@ -40,6 +40,8 @@
 <!---------------------------------------------- KEY FEATURES ------------------------------------------>
 ## Key Features
 
+[![Join the chat at https://gitter.im/mujalab/Funmacs](https://badges.gitter.im/mujalab/Funmacs.svg)](https://gitter.im/mujalab/Funmacs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 * Work In Progress (WIP)
 
 <!---------------------------------------------- HOW TO USE -------------------------------------------->
